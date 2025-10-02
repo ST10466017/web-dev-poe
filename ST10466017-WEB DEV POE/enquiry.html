@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrightFutures — Enquiry & Volunteer Sign-Up</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a class="logo" href="index.html">BrightFutures</a>
+<nav aria-label="Main navigation">
+<ul class="main-nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Volunteer or Sponsor</h1>
+<p>Fill out the form below to sign up as a volunteer, sponsor a meal, or enquire about partnerships.</p>
+
+
+<form id="enquiry-form" novalidate>
+<label for="name">Full name</label>
+<input id="name" name="name" type="text" required>
+
+
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required>
+
+
+<label for="phone">Phone (optional)</label>
+<input id="phone" name="phone" type="tel">
+
+
+<label for="type">Enquiry type</label>
+<select id="type" name="type">
+<option value="volunteer">Volunteer</option>
+<option value="sponsor">Sponsor a meal</option>
+<option value="partnership">Partnership</option>
+</select>
+
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+
+<button class="btn primary" type="submit">Submit enquiry</button>
+</form>
+
+
+<div id="form-status" aria-live="polite"></div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year-4"></span> BrightFutures. All rights reserved.</p>
+</div>
+</footer>
+</html>
