@@ -19,36 +19,60 @@ Increasing newsletter subscriptions and social media interaction by including ca
 
  
 Website Features 
+
 Home Page: An introductory banner showcasing current initiatives. 
+
 About Page: The background, goals, and team of leaders. 
+
 Projects/Services Page: Detailed explanations of educational programs and feeding programs. 
+
 Enquiry Page: A form for partnerships and volunteers. 
+
 Contact Page: Address, phone number, email, and links to social media.
+
 style.css – Controls the website’s colours, layout, spacing, and overall design.
+
 script.js – Adds interactions, form validation, animations, and dynamic features.
+
 robots.txt – Tells search engines which pages they can and cannot crawl.
+
 sitemap.xml – Lists all website pages to help search engines index the site.
+
 README.md – Explains the project, features, instructions, and changelog.
+
 images folder – Stores all images used across the website.
 
 Accessibility and Design 
+
 Green and blue hues will be used in the design to symbolize trust, progress, and hope. In accordance with the Web Content Accessibility Guidelines (W3C, 2023), accessibility will be given first priority, guaranteeing that the website is navigable on all platforms, including smartphones. 
 
 SEO Improvements
 
 On-Page SEO
+
 Page titles and meta descriptions added
+
 Header tags (H1, H2, H3) used correctly
+
 Images have alt text
+
 Internal links added
+
 Mobile-friendly CSS
+
 Clean URLs and simple page names
 
 Extra SEO Files
+
 robots.txt — tells Google what to index
+
 sitemap.xml — lists all pages
 
+
 Performance
+
 Images compressed
+
 CSS + JS optimised
+
 Lazy-loading added
