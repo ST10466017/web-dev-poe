@@ -1,54 +1,73 @@
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrightFutures — Contact</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrightFutures — Contact</title>
+  <meta name="description" content="Contact BrightFutures for general enquiries and media requests." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<a class="logo" href="index.html">BrightFutures</a>
-<nav aria-label="Main navigation">
-<ul class="main-nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="enquiry.html">Enquiry</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">BrightFutures</a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Email: <a href="mailto:info@brightfutures.org">info@brightfutures.org</a></p>
+    <p>Phone: <a href="tel:+27211234567">+27 21 123 4567</a></p>
 
-<main class="container">
-<h1>Contact Us</h1>
-<p>BrightFutures — Cape Town, South Africa</p>
+    <section>
+      <h2>Send a message</h2>
+      <form id="contact-form" action="#" novalidate>
+        <label for="cname">Full name *</label>
+        <input id="cname" name="cname" type="text" required>
 
+        <label for="cemail">Email *</label>
+        <input id="cemail" name="cemail" type="email" required>
 
-<section class="locations">
-<h2>Our Locations</h2>
-<ul>
-<li>
-<h3>Community Kitchen: Woodstock</h3>
-<p>123 Example Road, Woodstock, Cape Town</p>
-</li>
-<li>
-<h3>After-School Centre: Khayelitsha</h3>
-<p>45 Example Street, Khayelitsha, Cape Town</p>
-</li>
-</ul>
-</section>
+        <label for="creason">Reason *</label>
+        <select id="creason" name="creason" required>
+          <option value="">-- select --</option>
+          <option value="general">General message</option>
+          <option value="donation">Donation enquiry</option>
+          <option value="media">Media enquiry</option>
+        </select>
 
+        <label for="cphone">Phone</label>
+        <input id="cphone" name="cphone" type="tel" placeholder="+27 82 123 4567" pattern="^\+?[0-9\s-]{7,15}$">
 
-<section class="contact-info">
-<h2>Get in touch</h2>
-<p>Email: <a href="mailto:info@brightfutures.org">info@brightfutures.org</a></p>
-<p>Phone: <a href="tel:+27211234567">+27 21 123 4567</a></p>
-</section>
+        <label for="cmessage">Message *</label>
+        <textarea id="cmessage" name="cmessage" rows="5" required></textarea>
 
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+      <div id="contact-status" aria-live="polite"></div>
+    </section>
 
-<section class="map">
-<h2>Map</h2>
-<p>(Include screen)
+    <section id="map" style="height:320px;margin-top:20px;">
+      <!-- Leaflet map injected here by js/map.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year-5"></span> BrightFutures</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
