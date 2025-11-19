@@ -42,11 +42,15 @@ README.md – Explains the project, features, instructions, and changelog.
 
 images folder – Stores all images used across the website.
 
+
 Accessibility and Design 
 
 Green and blue hues will be used in the design to symbolize trust, progress, and hope. In accordance with the Web Content Accessibility Guidelines (W3C, 2023), accessibility will be given first priority, guaranteeing that the website is navigable on all platforms, including smartphones. 
 
+
+
 SEO Improvements
+
 
 On-Page SEO
 
@@ -67,6 +71,7 @@ Extra SEO Files
 robots.txt — tells Google what to index
 
 sitemap.xml — lists all pages
+
 
 
 Performance
