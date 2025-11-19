@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive or admin paths (if present)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
