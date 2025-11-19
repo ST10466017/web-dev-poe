@@ -1,67 +1,95 @@
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrightFutures — Home</title>
-<meta name="description" content="BrightFutures — community feeding schemes and education support in Cape Town">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrightFutures — Home</title>
+  <meta name="description" content="BrightFutures - community feeding schemes and education support in Cape Town" />
+  <meta name="keywords" content="feeding scheme Cape Town, volunteer Cape Town, non-profit South Africa, child nutrition" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Leaflet CSS for map (used on contact page) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<a class="logo" href="index.html">BrightFutures</a>
-<nav aria-label="Main navigation">
-<ul class="main-nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="enquiry.html">Enquiry</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">BrightFutures</a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <h1 id="hero-title">Nourish a child. Empower a future.</h1>
+      <p class="lead">Join BrightFutures in providing meals and learning support to underprivileged children across Cape Town.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="enquiry.html">Volunteer</a>
+        <a class="btn" href="enquiry.html#donate">Donate</a>
+      </div>
+    </section>
 
-<main>
-<section class="hero" aria-labelledby="hero-title">
-<div class="container">
-<h1 id="hero-title">Nourish a child. Empower a future.</h1>
-<p class="lead">Join BrightFutures in providing meals and learning support to underprivileged children across Cape Town.</p>
-<div class="hero-ctas">
-<a class="btn primary" href="enquiry.html">Volunteer</a>
-<a class="btn" href="#donate">Donate</a>
-</div>
-</div>
-</section>
+    <section class="container highlights" aria-labelledby="impact">
+      <h2 id="impact">Our Impact</h2>
+      <div class="cards" id="impact-cards">
+        <article class="card">
+          <h3>Feeding Schemes</h3>
+          <p>Daily meals provided to over 500 children monthly through community kitchens.</p>
+        </article>
+        <article class="card">
+          <h3>Tutoring</h3>
+          <p>After-school programmes supporting literacy and numeracy for primary-school learners.</p>
+        </article>
+        <article class="card">
+          <h3>Volunteers</h3>
+          <p>Hundreds of community volunteers who mentor and support children every week.</p>
+        </article>
+      </div>
+    </section>
 
+    <section class="container gallery-section" aria-labelledby="gallery-head">
+      <h2 id="gallery-head">Gallery</h2>
+      <div class="thumbs" id="thumbs">
+        <img src="images/image1.jpg" alt="Community meal distribution" data-full="images/image1.jpg">
+        <img src="images/image2.jpg" alt="Volunteers tutoring children" data-full="images/image2.jpg">
+        <img src="images/image3.jpg" alt="Community event" data-full="images/image3.jpg">
+      </div>
+    </section>
 
-<section class="highlights container" aria-labelledby="highlights-head">
-<h2 id="highlights-head">Our impact</h2>
-<ul class="cards">
-<li class="card">
-<h3>Feeding Schemes</h3>
-<p>Daily meals provided to over 500 children monthly through community kitchens.</p>
-</li>
-<li class="card">
-<h3>Tutoring</h3>
-<p>After-school programmes supporting literacy and numeracy for primary-school learners.</p>
-</li>
-<li class="card">
-<h3>Volunteer Programmes</h3>
-<p>Get involved: mentor, teach, or help with food distribution.</p>
-</li>
-</ul>
-</section>
+    <section class="container dynamic-posts">
+      <h2>Latest updates</h2>
+      <input id="search" type="search" placeholder="Search updates..." aria-label="Search updates">
+      <select id="sort">
+        <option value="new">Newest</option>
+        <option value="az">Title A–Z</option>
+        <option value="za">Title Z–A</option>
+      </select>
+      <div id="posts"></div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> BrightFutures. All rights reserved.</p>
+      <small>Follow us: <a href="#" aria-label="BrightFutures on Facebook">Facebook</a> · <a href="#">Instagram</a></small>
+    </div>
+  </footer>
 
-<section id="donate" class="donate container" aria-labelledby="donate-head">
-<h2 id="donate-head">Support BrightFutures</h2>
-<p>Your donation helps provide meals and learning resources. Choose how you want to help.</p>
-<div class="donate-actions">
-<!-- Replace the '#' with your PayFast / PayPal integration link or payment endpoint -->
-<a class="btn primary" href="#" role="button">Donate via PayFast</a>
-<a class="btn" href="enquiry.html">Sponsor a food parcel</a>
-</div>
-</section>
+  <!-- Libraries -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- App scripts (split modules) -->
+  <script src="js/dynamic.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
