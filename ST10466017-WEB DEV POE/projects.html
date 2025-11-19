@@ -1,57 +1,68 @@
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrightFutures — Projects</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrightFutures — Projects</title>
+  <meta name="description" content="Details of community feeding schemes, tutoring and mentorship programmes." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container">
-<a class="logo" href="index.html">BrightFutures</a>
-<nav aria-label="Main navigation">
-<ul class="main-nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="enquiry.html">Enquiry</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">BrightFutures</a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h1>Our Projects</h1>
 
-<main class="container">
-<h1>Our Projects</h1>
+    <div class="tabs" role="tablist" aria-label="Project types">
+      <button role="tab" aria-selected="true" data-tab="feeding">Feeding Schemes</button>
+      <button role="tab" aria-selected="false" data-tab="tutoring">Tutoring</button>
+      <button role="tab" aria-selected="false" data-tab="mentorship">Mentorship</button>
+    </div>
 
+    <div class="tab-panels">
+      <section id="feeding" class="tab-panel" role="tabpanel">
+        <h2>Community Feeding Schemes</h2>
+        <p>We operate community kitchens providing nutritious meals on weekdays.</p>
+      </section>
 
-<section class="project">
-<h2>Community Feeding Schemes</h2>
-<p>We run community kitchens that prepare nutritious meals distributed to children and families in need. The programme operates weekdays at three partner locations.</p>
-</section>
+      <section id="tutoring" class="tab-panel" role="tabpanel" hidden>
+        <h2>After-school Tutoring</h2>
+        <p>Volunteer tutors provide literacy and numeracy support twice a week.</p>
+      </section>
 
+      <section id="mentorship" class="tab-panel" role="tabpanel" hidden>
+        <h2>Mentorship & Life Skills</h2>
+        <p>Workshops and mentorship providing life skills for older learners.</p>
+      </section>
+    </div>
 
-<section class="project">
-<h2>After-school Tutoring</h2>
-<p>Volunteer tutors provide literacy and numeracy support twice a week to primary school learners to boost classroom performance.</p>
-</section>
+    <h2>FAQs</h2>
+    <div class="accordion">
+      <button class="accordion-toggle">How to volunteer?</button>
+      <div class="accordion-panel">Complete the volunteer form on the Enquiry page with your availability.</div>
 
+      <button class="accordion-toggle">How are donations used?</button>
+      <div class="accordion-panel">Donations support meal preparation, facilities, and learning materials.</div>
+    </div>
+  </main>
 
-<section class="project">
-<h2>Mentorship and Life Skills</h2>
-<p>Workshops on life skills, hygiene, and career awareness for older learners and youths in the community.</p>
-</section>
-</main>
+  <footer class="site-footer container">
+    <p>&copy; <span id="year-3"></span> BrightFutures</p>
+  </footer>
 
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year-3"></span> BrightFutures. All rights reserved.</p>
-</div>
-</footer>
-
-
-<script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
